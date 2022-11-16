@@ -21,7 +21,7 @@ const fetchData = async () => {
   }
 };
 
-// fetchData();
+fetchData();
 
 VANTA.NET({
   el: "#canvas",
