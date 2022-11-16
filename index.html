@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petr Belyayev</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="canvas">
+      <div class="canvas-filter"></div>
+    </div>
+    <!-- Navbar  -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light p-md-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#scrollspyHeading1"
+          ><img src="./public/logo.svg" width="40px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-end me-3" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">About</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#scrollspyHeading3">Work</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#scrollspyHeading4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero  -->
+    <div id="scrollspyHeading1"></div>
+    <div class="vh-100 d-flex justify-content-center">
+      <div class="content lh-1">
+        <p class="intro lh-lg">Hi, my name is</p>
+        <p class="intro-heading1">Petr Belyayev.</p>
+        <p class="intro-heading1 mb-4">I build stuff with code.</p>
+        <p class="intro-bio mb-5 lh-sm" id="bio"></p>
+        <!-- <p class="intro-bio mb-5 lh-sm" id="bio">
+            I’m a full stack developer focused on building applications using
+            popular frontend and backend frameworks to achieve amazing results.
+          </p> -->
+        <form
+          action="./js-assignment-portfolio-PetrBelyayev/public/FastTrack Petr Belyayev Resume.pdf"
+          target="_blank"
+        >
+          <button class="callToAction">Resume</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbarNav"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy p-3 rounded-2"
+      tabindex="0"
+    >
+      <!-- about -->
+      <div id="scrollspyHeading2"></div>
+      <div class="container d-flex justify-content-center">
+        <div class="card border-0 mb-3" style="max-width: 900px">
+          <div class="row g-0">
+            <div class="col-md-4 order-1 my-auto pb-5">
+              <img
+                class="img-fluid rounded-start"
+                alt="profile picture"
+                id="profile"
+              />
+              <!-- <img
+              src="/js-assignment-portfolio-PetrBelyayev/public/profile_2.png"
+              class="img-fluid rounded-start"
+              alt="profile picture"
+              id="profile"
+            /> -->
+            </div>
+            <div class="col-md-7 me-5">
+              <div class="card-body">
+                <h6 class="card-title mb-5 fs-1 fw-bold">About me.</h6>
+                <p class="card-text">
+                  Hello! My name is Petr (if you're wondering, it's "Peter") and
+                  I enjoy building things with code. My interest for building
+                  things started at an early age, I loved taking things apart
+                  and putting them back together, usually things never worked
+                  after BUT I became better at it with time!
+                  <br />
+                  <br />
+                  My coding journey has been incredible, lots of fun and some
+                  downs, but the experience is what made it worthwhile. I
+                  started my journey with HTML, CSS and Javascript, learning
+                  other technologies in between such as React, Node, Express,
+                  Next, GraphQL, Tailwind and Bootstrap to name a few.
+                  <br />
+                  <br />
+                  The journey is not over yet! Here's what I've been working
+                  with recently.
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> Java
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> Spring
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> Sql
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> React
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> Javascript (ES6)
+                  </div>
+                  <div class="col">
+                    <i class="bi bi-caret-right-fill"></i> Node.js
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider1"></div>
+      <!-- work -->
+      <div id="scrollspyHeading3"></div>
+      <div class="container d-flex justify-content-center">
+        <div class="col mb-5" style="max-width: 900px">
+          <h6 class="card-title ms-3 fs-1 fw-bold">Some of my work.</h6>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="card border-0" style="max-width: 850px">
+          <div class="card-body">
+            <h5 class="card-title fw-light">Pokemon API</h5>
+          </div>
+          <img
+            src="./public/poke_api.png"
+            class="card-img-top"
+            alt="pokemon project"
+          />
+          <div class="text mt-5">
+            <div class="row">
+              <p class="card-text col-md-9">
+                A single page website that uses a Pokemon API to fetch indvidual
+                data about each pokemon. Cards can be flipped for additional
+                information, clicking on another card or scrolling will close
+                previous card. The page only fetches generation 1 pokemons.
+              </p>
+            </div>
+
+            <div class="techUsed my-3">
+              VS Code | HTML | CSS | JavaScript | API | Axios | Vercel
+            </div>
+            <a
+              href="https://github.com/PetrBelyayev/Pokemon_API"
+              target="_blank"
+              ><i class="bi bi-git me-3"></i
+            ></a>
+            <a
+              href="https://pokemon-api-petrbelyayev.vercel.app/"
+              target="_blank"
+              ><i class="bi bi-rocket-takeoff-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="divider2"></div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="card border-0" style="max-width: 850px">
+          <div class="card-body">
+            <h5 class="card-title text-end fw-light">Nasa API</h5>
+          </div>
+
+          <img src="./public/nasa_api.png" class="card-img-top" alt="..." />
+
+          <div class="text-md-end mt-5">
+            <div class="row">
+              <p class="card-text col-md-9 order-1">
+                Originally, a Shopify front end challenge for the Summer 2022
+                Internship, that ended up becoming my own personal project. This
+                project uses NASA's APOD API which fetches pictures, date, and
+                title for each item. I included a preloader animation while the
+                page fetches the images, each card also includes a like/unlike
+                button.
+              </p>
+              <div class="col"></div>
+            </div>
+
+            <div class="techUsed my-3">
+              VS Code | HTML | CSS | JavaScript | API | Axios | Vercel
+            </div>
+            <a href="https://github.com/PetrBelyayev/nasa_api" target="_blank"
+              ><i class="bi bi-git"></i
+            ></a>
+            <a href="https://nasa-api-coral.vercel.app/" target="_blank"
+              ><i class="bi bi-rocket-takeoff-fill ms-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+
+      <div class="divider1"></div>
+      <div class="container d-flex justify-content-center">
+        <h1 class="contactH1 fw-bold">Get in touch.</h1>
+      </div>
+      <div class="divider2"></div>
+      <div class="container d-flex justify-content-center">
+        <p>Always excited to talke about code or new opportunities.</p>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <!-- <p class="hireCheck" id="hire">I'm available for hire!</p> -->
+        <p id="hire"></p>
+      </div>
+      <div id="scrollspyHeading4"></div>
+      <div class="divider2"></div>
+      <div class="container d-flex justify-content-center">
+        <form action="mailto: petrpbelyayev@gmail.com" target="_blank">
+          <button class="callToAction">Say Hello</button>
+        </form>
+      </div>
+      <div class="divider1"></div>
+      <div class="container d-flex justify-content-center">
+        <p>Designed and built by Peter Belyayev 2022</p>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
