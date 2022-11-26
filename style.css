@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* * {
@@ -97,12 +98,12 @@ body {
 .bi-git,
 .bi-rocket-takeoff-fill,
 .bi-linkedin {
-  color: grey;
+  color: #cf40cb;
   font-size: 25px;
 }
 
 .bi-caret-right-fill {
-  color: #fd4df6;
+  color: #cf40cb;
 }
 
 .techUsed {
@@ -111,9 +112,13 @@ body {
 }
 
 .card-img-top {
-  border: solid 1px #fd4df6;
+  border: solid 1px #cf40cb;
 }
 
 .contactH1 {
   font-size: clamp(3rem, 5vw, 3.5rem);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: #cf40cb !important;
 }
