@@ -1,27 +1,44 @@
-const fetchData = async () => {
-  try {
-    let response = await fetch("https://api.github.com/users/PetrBelyayev");
-    let user = await response.json();
-    console.log(user.bio);
-    console.log(user.avatar_url);
-    console.log(user.bio);
-    console.log(user.hireable);
-    document.getElementById("bio").innerHTML = user.bio;
+// const fetchData = async () => {
+//   try {
+//     let response = await fetch("https://api.github.com/users/PetrBelyayev");
+//     let user = await response.json();
+//     console.log(user.bio);
+//     console.log(user.avatar_url);
+//     console.log(user.bio);
+//     console.log(user.hireable);
+//     document.getElementById("bio").innerHTML = user.bio;
 
-    document.getElementById("profile").src = user.avatar_url;
-    if (user.hireable === true) {
-      document.getElementById("hire").innerHTML = "I'm available for hire!";
-    } else {
-      console.log(
-        "I’m not currently looking for any new opportunities, but feel free to reach out for any questions"
-      );
-    }
-  } catch (error) {
-    console.log("Error with finding user", error);
+//     document.getElementById("profile").src = user.avatar_url;
+//     if (user.hireable === true) {
+//       document.getElementById("hire").innerHTML = "I'm available for hire!";
+//     } else {
+//       console.log(
+//         "I’m not currently looking for any new opportunities, but feel free to reach out for any questions"
+//       );
+//     }
+//   } catch (error) {
+//     console.log("Error with finding user", error);
+//   }
+// };
+
+// fetchData();
+
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarNav");
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+
+function resize() {
+  if (window.innerWidth > 992) {
+    location.reload();
+  } else if (window.innerWidth < 992) {
+    navLinks.forEach((l) => {
+      l.addEventListener("click", () => {
+        bsCollapse.toggle();
+      });
+    });
   }
-};
-
-fetchData();
+}
+window.onresize = resize;
 
 VANTA.NET({
   el: "#canvas",
