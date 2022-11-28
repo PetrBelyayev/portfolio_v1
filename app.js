@@ -27,15 +27,18 @@ const navLinks = document.querySelectorAll(".nav-item");
 const menuToggle = document.getElementById("navbarNav");
 const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
 
+if (window.innerWidth < 992) {
+  navLinks.forEach((l) => {
+    l.addEventListener("click", () => {
+      bsCollapse.toggle();
+    });
+  });
+
+}
+
 function resize() {
   if (window.innerWidth > 992) {
     location.reload();
-  } else if (window.innerWidth < 992) {
-    navLinks.forEach((l) => {
-      l.addEventListener("click", () => {
-        bsCollapse.toggle();
-      });
-    });
   }
 }
 window.onresize = resize;
