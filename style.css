@@ -36,6 +36,10 @@ body {
   color: #cf40cb;
 }
 
+#navi {
+  transition: top .5s;
+}
+
 .content {
   margin-top: 150px;
   padding: 40px;
